@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Hello Agent</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            text-align: center;
+            padding: 3rem 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            margin: 1.5rem 0;
+            line-height: 1.6;
+            padding: 0 1rem;
+        }
+        
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-top: 1rem;
+        }
+        
+        button:hover {
+            background-color: #2980b9;
+        }
+        
+        button:active {
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello Agent</h1>
+    <p><span id="desc" aria-live="polite">Minimal dependency-free app.</span></p>
+    <button id="toggleBtn">Click</button>
+    <script>
+      document.getElementById('toggleBtn').addEventListener('click', function () {
+        document.getElementById('desc').textContent = 'Changed!';
+      });
+      console.log('JS loaded');
+    </script>
+</body>
+</html>
