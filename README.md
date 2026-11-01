@@ -6,7 +6,8 @@ Repository: https://github.com/0xyz-exe/hello-agent
 
 ## Screenshots
 
-### CLI Execution Output
+### 1. CLI Execution Output
+Output eksekusi terminal Python zero-dependency yang memverifikasi kesiapan lingkungan runtime dan eksekusi pesan salam resmi:
 ![CLI Execution Output](docs/screenshots/01_terminal_output.png)
 
 ## How to run
